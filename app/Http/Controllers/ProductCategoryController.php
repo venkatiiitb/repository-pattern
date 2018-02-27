@@ -28,7 +28,7 @@ class ProductCategoryController extends Controller
      */
     public function getAllProductCategories($id = null)
     {
-        $productCategories = $this->productCategory->getSelectedItem();
+        $productCategories = $this->productCategory->getAll();
 
         return $productCategories;
     }

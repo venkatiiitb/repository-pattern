@@ -2,8 +2,6 @@
 
 namespace App\Repositories;
 
-use App\SkyProductCategory;
-
 class ProductCategoryRepo extends Repository
 {
     /**
@@ -14,10 +12,5 @@ class ProductCategoryRepo extends Repository
     function model()
     {
         return 'App\SkyProductCategory';
-    }
-
-    public function getSelectedItem()
-    {
-        return SkyProductCategory::find(1);
     }
 }
